@@ -8,11 +8,6 @@
     color:#4D4D4D; /* {selcting Primary font color} */
 }
 
-body{
-    height: 100vh;
-    width: auto;
-}
-
 /* the landing page is divide into 2 sections:-
 
 1) where the details of the student are shown along with the avatar, lets call it {profile} 
@@ -22,7 +17,7 @@ body{
 
 /* styling the {profile} part */
 .profile{
-    height: 60%;
+    height: 60vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
