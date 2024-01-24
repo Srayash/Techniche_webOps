@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance_App</title>
+</head>
+<body>
+    <Section class="profile">
+        <div class="avatar"><img src="Avatar.jpg" height="200px"></div>
+        <div class="student-details">
+           <p>Susanna Joseph</p>
+           <p id="roll">210102090</p>
+           <p>Electronics and Communication Engineering</p>
+        </div>
+    </Section>
+    <section class="attendance">
+        <p id="attendance-heading">Todays Classes</p>
+        <ul class="subjects">
+            <li id="L1"><p>Data Structure and Algorithms</p>
+                <div id="buttonL1">
+                    <button id="present" onclick="presentL1()">P</button>
+                    <button id="absent" onclick="absentL1()">A</button>
+                </div></li>
+            <li id="L2"><p>Computer Networks</p>
+                <div id="buttonL2">
+                    <button id="present" onclick="presentL2()">P</button>
+                    <button id="absent" onclick="absentL2()">A</button>
+                </div></li>
+            <li id="L3"><p>Digital Communication</p>
+                <div id="buttonL3">
+                    <button id="present" onclick="presentL3()">P</button>
+                    <button id="absent" onclick="absentL3()">A</button>
+                </div></li>
+        </ul>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

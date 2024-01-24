@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    color:#4D4D4D; /* {selcting Primary font color} */
+}
+
+body{
+    height: 100vh;
+    width: auto;
+}
+
+/* the landing page is divide into 2 sections:-
+
+1) where the details of the student are shown along with the avatar, lets call it {profile} 
+
+2) the fuctional part of the site where student put their attendance, lets call it {attendance} */
+
+
+/* styling the {profile} part */
+.profile{
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5F7FA;
+}
+
+.student-details{
+    height: 200px;
+    padding: 60px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 16px;
+}
+
+.student-details p{
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+#roll{
+    color: #4CAF4F;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+
+/* styling the {attendance} part */
+
+.attendance{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#attendance-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attendance ul{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attendance ul li{
+    background-color: #F5F7FA;
+    border-radius: 4px;
+    width: 200px;
+    height: 117px;
+    padding: 10px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.attendance ul li button{
+    height: 27px;
+    width: 25px;
+    border: 1px solid #4d4d4d;
+    border-radius: 2.78px;
+    margin-top: 2px;
+    font-weight: 700;
+}
+
+#present{
+    background-color: #4CAF4F;
+}
+#absent{
+    background-color: #F35B58 ;
+}
+
+/* onclick behaviour */
+
+.punchPresent{
+    background-color: #4CAF4F;
+}
+
+.punchAbsent{
+    background-color: #F35B58;
+}
+
+@media screen and (max-width: 685px) {
+
+    
+    .attendance ul{
+        margin: 20px 0px;
+        list-style: none;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attendance ul li{
+        width: 200px;
+        height: 117px;
+        margin: 20px 0px;
+    }
+
+    .profile{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #F5F7FA;
+    }
+
+}
